@@ -1,0 +1,190 @@
+.clear{
+    clear: both;
+}
+body{ font-family: Arial, Helvetica, sans-serif;}
+
+/* Video 65:  2D Transform - Scale */
+.scale {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s;
+    /*transform: scaleX(2);
+    transform: scaleY(2);*/
+  }
+
+.scale:hover{    
+    transform: scale(2, 2);
+}
+/* Video 66:  2D Transform - Rotate */
+.rotate {
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    transform: rotate(45deg) scale(2,2);
+    /*transform: rotate(0.25turn);*/
+  }
+
+/* Video 67 :  2D Transform - Translate */
+.translate{
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+.translate:hover{
+    transform: translate(-100px, -100px);
+}
+/* Assignment 1 */
+.assignment1{
+    margin: 50px auto;
+    width: 300px;
+    height: 200px;
+    background-color: #eee;
+    color: rgb(60, 178, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+.assignment1::before{
+  content:"";
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(60, 178, 218);
+  z-index: -1;
+  transform: scale(1.03) rotate(-7deg);
+}
+.assignment1::after{
+  content:"";
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(238, 69, 98);
+  z-index: -2;
+  transform: rotate(7deg);
+}
+
+/* Assignment 2 */
+.assignment2{
+  margin: 30px auto;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  background-color: #eee;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+}
+.assignment2::before{
+  content: "";
+  position: absolute;
+  border: 10px solid;
+  border-color: rgb(224, 65, 92) rgb(224, 65, 92)  rgb(224, 65, 92) transparent;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: -10px;
+  left:-10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.assignment2::after{
+  content: "";
+  position: absolute;
+  border: 10px solid;
+  border-color:  #0693e3 transparent #0693e3 #0693e3;
+  width: 110%;
+  height: 110%;
+  border-radius: 50%;
+  top: -20px;
+  left:-20px;
+}
+
+/* Assignment 3 */
+.assignment3{
+  margin: 30px auto;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  background-color: #eee;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+}
+.assignment3::before, .assignment3::after{
+  content: "";
+  position: absolute;
+  border: 10px solid;
+  border-radius: 50%;
+}
+.assignment3::before{
+  border-color: rgb(224, 65, 92) rgb(224, 65, 92)  rgb(224, 65, 92) transparent;
+  width: 100%;
+  height: 100%;
+  top: -10px;
+  left:-10px;
+}
+.assignment3::after{
+  border-color:  #0693e3 transparent #0693e3 #0693e3;
+  width: 110%;
+  height: 110%;
+  top: -20px;
+  left:-20px;
+}
+.assignment3::before{
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+.assignment3::after{
+  transition: 0.5s 0.5s ease-in-out;
+  -webkit-transition: 0.5s 0.5s ease-in-out;
+  -moz-transition: 0.5s 0.5s ease-in-out;
+  -ms-transition: 0.5s 0.5s ease-in-out;
+  -o-transition: 0.5s 0.5s ease-in-out;
+}
+.assignment3:hover::before, .assignment3:hover::after  {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}

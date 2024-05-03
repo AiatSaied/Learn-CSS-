@@ -1,0 +1,227 @@
+.clear{
+    clear: both;
+}
+body{ font-family: Arial, Helvetica, sans-serif;}
+/* Video 46: Flex Box - Parent - Direction, Wrap, Flow */
+/*
+    Flexible Box
+    For Parent
+    - display: flex => To Start Flexible Box
+    - flex-direction: row => Default Value
+    - flex-wrap: nowrap => Default Value
+    - flex-flow: [Flex-Direction] + [Flex-Wrap]
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flex {
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+.flex div {
+    background-color: #f00;
+    color: white;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+.float {
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.float div {
+    background-color: #f00;
+    color: white;
+    float: right;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Video 47 :  Flex Box - Parent - Justify Content*/
+/*
+    Flexible Box
+    For Parent
+    - display: flex => To Start Flexible Box
+    - flex-direction: row => Default Value
+    - flex-wrap: nowrap => Default Value
+    - flex-flow: [Flex-Direction] + [Flex-Wrap]
+    ---
+    - justify-content: flex-start => Default Value
+    */
+
+.flex1 {
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.flex1 div {
+    background-color: #f00;
+    color: white;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+.float1 {
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.float1 div {
+    background-color: #f00;
+    color: white;
+    float: right;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Video 48 : Flex Box - Parent - Align Items */
+    /*
+    Flexible Box
+    For Parent
+    - display: flex => To Start Flexible Box
+    - flex-direction: row => Default Value
+    - flex-wrap: nowrap => Default Value
+    - flex-flow: [Flex-Direction] + [Flex-Wrap]
+    ---
+    - justify-content: flex-start => Default Value
+    - align-items: stretch => Default Value
+    */
+
+.flex2 {
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.flex2 div {
+    background-color: #f00;
+    color: white;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 20px;
+}
+.flex2 .one,
+.float2 .one {
+    height: 80px;
+}
+.float2 {
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.float2 div {
+    background-color: #f00;
+    color: white;
+    float: right;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 20px;
+}
+.center {
+    background-color: blue;
+    color: white;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video 49:  Flex Box - Parent - Align Content*/
+/*
+    Flexible Box
+    For Parent
+    - display: flex => To Start Flexible Box
+    - flex-direction: row => Default Value
+    - flex-wrap: nowrap => Default Value
+    - flex-flow: [Flex-Direction] + [Flex-Wrap]
+    ---
+    - justify-content: flex-start => Default Value
+    - align-items: stretch => Default Value
+    - align-content: stretch => Default Value
+    */
+
+.flex3 {
+    background-color: #eee;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-between;
+}
+.flex3 div {
+    background-color: #f00;
+    color: white;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Assigment 1  done */
+.assignment1{
+    color: orangered;
+    background-color: #eee;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    border-left: 8px solid rgb(60, 143, 220);
+    border-right: 8px solid orangered;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* Assigment 2 done */
+.assignment2{
+    background-color: #eee;
+    padding: 10px 0;
+    margin: 20px auto;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+.assignment2 div{
+    color: white;
+    background-color: rgb(247, 48, 44);
+    text-align: center;
+    padding: 10px;
+    width: calc(90%/3);
+}

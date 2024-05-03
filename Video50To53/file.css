@@ -1,0 +1,304 @@
+.clear{
+    clear: both;
+}
+body{ font-family: Arial, Helvetica, sans-serif;}
+
+/* Video 50: Flex Box – Child – Grow, Shrink, Order */
+/*
+    Flexible Box
+    For Parent
+    - display: flex => To Start Flexible Box
+    - flex-direction: row => Default Value
+    - flex-wrap: nowrap => Default Value
+    - flex-flow: [Flex-Direction] + [Flex-Wrap]
+    - justify-content: flex-start => Default Value
+    - align-items: stretch => Default Value
+    - align-content: stretch => Default Value
+    For Child
+    - flex-grow: 0 => Default Value
+    - flex-shrink: 1 => Default Value
+    - order: 0 => Default Value
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flex1 {
+    background-color: #eee;
+    width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+}
+.flex1 div {
+    background-color: #f00;
+    color: white;
+    width: 80px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 5px;
+}
+
+/* Video 51: Flex Box – Child – Flex Basis, Flex Shorthand*/
+    /*
+    Flexible Box
+    For Parent
+    - display: flex => To Start Flexible Box
+    - flex-direction: row => Default Value
+    - flex-wrap: nowrap => Default Value
+    - flex-flow: [Flex-Direction] + [Flex-Wrap]
+    - justify-content: flex-start => Default Value
+    - align-items: stretch => Default Value
+    - align-content: stretch => Default Value
+    For Child
+    - flex-grow: 0 => Default Value
+    - flex-shrink: 1 => Default Value
+    - order: 0 => Default Value
+    - flex-basis: auto => Default Value
+    - flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 Auto
+    */
+.flex2 {
+    background-color: #eee;
+    width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+    display: inline-flex;
+}
+.flex2 div {
+    background-color: #f00;
+    color: white;
+    width: 80px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+.in {
+    display: inline-block;
+}
+
+/* Video 52 : Flex Box – Child – Align Self And Task */
+    /*
+    Flexible Box
+    For Parent
+    - display: flex => To Start Flexible Box
+    - flex-direction: row => Default Value
+    - flex-wrap: nowrap => Default Value
+    - flex-flow: [Flex-Direction] + [Flex-Wrap]
+    - justify-content: flex-start => Default Value
+    - align-items: stretch => Default Value
+    - align-content: stretch => Default Value
+    For Child
+    - flex-grow: 0 => Default Value
+    - flex-shrink: 1 => Default Value
+    - order: 0 => Default Value
+    - flex-basis: auto => Default Value
+    - flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 Auto
+    - align-self: auto => Default Value
+    */
+
+.flex3 {
+    background-color: #eee;
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start;
+}
+.flex3 div {
+    background-color: #f00;
+    color: white;
+    width: 80px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+
+/* Assigment 3  done*/
+.assignment3{
+    background-color:#eee;
+    padding: 10px 0;
+    margin: 20px auto;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: stretch;
+}
+.assignment3 div{
+    background-color: rgb(103, 126, 153);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: calc(90%/3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    order: 6;
+    align-self: flex-end;
+}
+.two{
+    order: 1;
+}
+.three{
+    align-self: flex-start;
+}
+.six{
+    order: -1;
+}
+
+/* Assignment 4 */
+.assignment4{
+    background-color:#eee;
+    padding: 10px;
+    margin: 20px auto;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.assignment4 div{
+    background-color: rgb(41, 145, 124);
+    color: white;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.one1{    
+    margin-bottom: 20px;
+    align-self: flex-end;
+    max-width: 30px;
+}
+.three3{
+    align-self: flex-end;
+    max-width: 30px;
+}
+.two2{
+    margin-bottom: 20px;
+}
+
+/* Assignment 5 */
+.assignment5{
+    background-color:#eee;
+    padding: 10px;
+    margin: 20px auto;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.assignment5 div{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /*width: 100%;*/
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.one11{
+    background-color: rgb(248, 172, 31);
+    margin-right: 70px;
+    align-self: flex-start;
+}
+.two22{
+    background-color: rgb(139, 204, 41);
+    margin-right: 70px;
+    align-self: flex-end;
+}
+.three33{
+    background-color: rgb(137, 101, 68);
+    align-self: flex-start;
+}
+.four44{
+    background-color: rgb(134, 49, 207);
+    margin-right: 70px;
+    align-self: flex-end;
+    order: -1;
+}
+
+/* Assignment 6 */
+.page{
+    background-color: #eee;
+    padding: 10px;
+    margin: 20px auto;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+
+.header{
+    width: 780px;
+    height: 40px;
+    display: flex;
+    /*justify-content: flex-start;*/
+    align-items: center;
+}
+.logo{
+    background-color:#ddd;
+    width: 70px;
+    height: 40px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links{
+    background-color:#ddd;
+    padding: 10px;
+    width: 710px;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.links li{
+    margin-left: 10px;
+}
+
+.main-area{
+    width: 780px;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+}
+.content{
+    background-color:#ddd;
+    width: 500px;
+    padding: 10px;
+}
+.sidebar{
+    background-color:#ddd;
+    width: 270px;
+    padding: 10px;
+}
+
+.footer{
+    background-color:#ddd;
+    width: 780px;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

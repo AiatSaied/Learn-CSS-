@@ -1,0 +1,88 @@
+body{font-size: 30px;}
+/*
+Block
+    - Take Full Width If No Width
+    - Add Line Break
+    - Respect Padding, Margin, Width, Height
+
+Inline
+    - Do Not Repsepct Width, Height
+    - Respect Padding And Margin [ Just Right + Left ]
+    - Do Not Add Line Break
+    - Allow Elements Before And After It in The Same Line
+
+Inline-Block
+    - Allow Elements Before And After It in The Same Line
+    - Respect Padding, Margin, Width, Height
+*/
+    
+.block{
+    background-color: rgb(198, 227, 231);
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+}
+
+.inline {
+    background-color: rgb(231, 176, 176);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 50px;
+}
+
+.inlineBlock{
+    background-color: rgb(207, 188, 234);
+    display: inline-block;
+    padding: 20px; 
+    margin: 20px;
+    width:300px;
+    height: 60px;
+}
+
+/*  Grouping Multiple Selectors //////////////////////////////////////////       */
+.one {
+    border-bottom: 2px solid red; color: red;
+}
+.two {
+    border-bottom: 2px solid green; color: green;
+}
+.three {
+    border-bottom: 2px solid blue; color: blue;
+}
+.four {
+    border-bottom: 2px solid black; color: black;
+}
+
+.one,
+.two,
+.three,
+.four,
+.my-p {
+    padding: 15px;
+    margin: 12px 0;
+    background-color: #ededed;
+}
+
+/* Dimensions - Width and Height */
+.dimensions{
+    background-color: red;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    /* min-width: 400px;
+    max-width: 400px;
+    max-height: 100px;
+    */
+}
+
+.lineHeight{
+    line-height: 1.6; /* line-height: sets the height of a line box and used to set the distance between lines of text.*/
+}
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+.clear{
+    clear: both;
+}
+body{ font-family: Arial, Helvetica, sans-serif;}
+/* Video 42: Transition */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.one {
+    background-color: #EEE;
+    width: 200px;
+    height: 100px;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-property: width;
+    transition-timing-function: ease-in-out;
+    /*transition: all 2s 0.5s linear;*/
+}
+.one:hover {
+    width: 280px;
+    height: 120px;
+}
+
+/* Video 43 :  !Important Declaration And Use Cases*/
+.one1 {
+    background-color: #EEE !important;
+}
+
+/* Video 44 : Margin Collapse*/
+    /*
+    The Margin Collapse
+    [1] Only Vertical Margin Collapse
+    [2] Bigger Margin Wins
+    [3] Margin Collapsing With Elements Without Anything Between
+    [4] Nesting Does Not Prevent Collapse
+    */
+.parent {
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: #eee;
+}
+.parent .onee,
+.parent .two {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.onee {
+    background-color: #ddd;
+}
+.two {
+    background-color: #aaa;
+}
+.up {
+    background-color: red;
+    color: white;
+    height: 80px;
+    margin-bottom: 40px;
+}
+.down {
+    background-color: green;
+    color: white;
+    height: 80px;
+    margin-top: 40px;
+}
+
+/* Video 45:  CSS Variables And Training’s*/
+    /*
+    CSS Variables
+    - Global Variable
+    - Local Variable
+    var(Variable Name, Fall Back Value)
+   */
+
+:root {
+    --mainColor: blue;
+    --mainPadding: 10px;
+}
+.main {
+    background-color: var(--mainColor, black);
+    color: white;
+    padding: calc(20px + var(--mainPadding));
+}
+h2 {
+    color: var(--mainColor);
+    background-color: #eee;
+    padding: var(--mainPadding);
+}
+p {
+    color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    padding: var(--mainPadding);
+}
+.aa:hover {
+    color: var(--mainColor);
+}
+.local {
+    --mainColor: black;
+    background-color: var(--mainColor);
+    color: white;
+}
+
+/* Assigment 1  */
+.assignemnt1{
+    background-color: #eee;
+    margin: 20px auto;
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    transition: margin-top 0.5s 0s ease;
+    -webkit-transition: margin-top 0.5s 0s ease;
+    -moz-transition: margin-top 0.5s 0s ease;
+    -ms-transition: margin-top 0.5s 0s ease;
+    -o-transition: margin-top 0.5s 0s ease;
+}
+.assignemnt11{
+    background-color: #ddd;
+    margin: 20px;
+    width: 400px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    text-align: center;
+    transition: margin-top 1s 0.5s ease;
+    -webkit-transition: margin-top 1s 0.5s ease;
+    -moz-transition: margin-top 1s 0.5s ease;
+    -ms-transition: margin-top 1s 0.5s ease;
+    -o-transition: margin-top 1s 0.5s ease;
+}
+.assignemnt1:hover{
+    margin-top: 10px;
+}
+.assignemnt11:hover{
+    margin-top: 40px;
+}
+/* Assigment 2  */
+.assignemnt2{
+    background-color: #ddd !important;
+    font-size: 20px !important;
+    border: 0px !important;
+    color: black !important;
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Assigment 3  */
+/*:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+
+div {
+    ???
+}*/

@@ -1,0 +1,108 @@
+html{font-size: 20px;}
+body{font-size: 40px;}
+/* Video 22 */
+.inheritance{
+        text-align: center;
+        padding: 20px;
+        background-color: #EEE;
+        font-size: 20px;
+        border: 2px solid blue;
+}
+
+.inheritance p {
+        border: 2px solid;
+        border-color: inherit;
+        padding: inherit;
+}
+
+/* Video 23 */
+.with-ser {
+    font-family: 'Times New Roman', Times, serif;
+}
+.san-ser {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.with-ser,
+.san-ser {
+    background-color: #EEE;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Video 24 */
+.CSS-units{
+        font-size: 5vw;
+}
+
+.CSS-units span {
+        font-size: 2rem;
+}
+
+/*Video 25 */
+.font-StyleVariantWeight1 {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+.font-StyleVariantWeight2 {
+    text-transform: uppercase;
+}
+
+/*Video 26 */
+.button1 {
+    background: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/*Assigment 1   done*/
+.assignment1{
+    border: 5px solid orangered;
+    margin: 10px auto;
+    /*padding: 25px 40px;*/
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    padding: 40px;
+}
+.assignment1 p{
+    background-color: rgba(181, 169, 169, 0.592);
+    border:inherit;
+    padding:inherit;
+    margin: inherit;
+}
+
+/*Assigment 2   done */
+.assignment2, .assignment22, .assignment222{
+    text-align: center;
+    font-size: 80px;
+}
+.assignment2{
+    font-family: 'Open Sans', sans-serif;
+}
+.assignment22{
+    font-family: 'Cairo', sans-serif;
+}
+.assignment222{
+    font-family: 'Jomhuria', serif;  
+}
+
+/*Assigment 3    done*/
+.assignment3, .assignment33, .assignment333{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+/* html is root element(rem) that assignment 3 will inherit from it */
+.assignment3{
+    font-size: 2.5rem; /* 2.5rem = 2.5 * 20 =50px */
+}
+.assignment33{
+    font-size: 2rem; /* 2rem = 2 * 20 =40px */
+}
+.assignment333{
+    font-size: 1.5rem; /* 1.5rem = 1.5 * 20 =30px */
+}
+

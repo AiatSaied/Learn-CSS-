@@ -1,0 +1,110 @@
+/* Video 27 */
+.parent {
+    background-color: red;
+    padding: 10px;
+}
+.parent div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    width: 25%;
+    float: left;
+}
+.clear {
+    clear: both;
+}
+
+/* Video 28 */
+.calc {
+    margin: 0;
+}
+.calc div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    float: left;
+    width: calc((100% - 60px) / 5);
+    margin-left: 10px;
+}
+/*
+    Content Width Is: 100%
+    6 Spaces  10px * 6 => 60px From Content Width
+    100% - 60px Available Space
+    5 Elements The Width Is: (100% - 60px) / 5
+*/
+
+/* Video 29 */
+.one1 {
+    background-color: red;
+    opacity: 0.2;
+}
+.two2 {
+    background-color: rgb(255 0 0 / 0.2)
+}
+
+
+/* Assigment 1 done */
+.box{
+    background-color: #eee;
+    width: 800px;
+    padding: 0%;
+}
+.box div{
+    background-color: rgb(213, 210, 210);
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.fullWidth{
+    width:calc(100% - 30px); 
+    /* One Element => 2 Spaces => 2 * 15px = 30px from content width => 
+    (100% - 30px) Available space => 1 Element  so the width is (100% - 30px) / 1*/
+    margin: 15px;
+    float: left;
+}
+.row1{
+    width:calc((100% - 60px) / 3); 
+    /* 3 Elements => 4 Spaces => 4 * 15px = 60px from content width => 
+    (100% - 60px) Available space => 3 Elements  so the width is (100% - 60px) / 3*/
+    margin-left: 15px;
+    float: left;
+}
+.row2{
+    width:calc((100% - 45px) / 2); 
+    /* 2 Elements => 3 Spaces => 3 * 15px = 45px from content width => 
+    (100% - 45px) Available space => 2 Elements  so the width is (100% - 45px) / 2*/
+    margin-left: 15px;
+    margin-top: 15px;
+    float: left;
+}
+.row3{
+    width:calc((100% - 75px) / 4); 
+    /* 4 Elements => 5 Spaces => 5 * 15px = 75px from content width => 
+    (100% - 75px) Available space => 4 Elements  so the width is (100% - 75px) / 4*/
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: left;
+}
+/* Assigment 2 done */
+.normal, .one, .two {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 20px;
+    background-color:rgb(160, 157, 157); /* Get The Background From Image */
+    color: black;
+}
+.one{
+    background-color:rgb(160 157 157 / 0.1); 
+}
+.two{
+    opacity:0.1 ;
+}
+
